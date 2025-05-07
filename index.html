@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf & The Witcher</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Surf & The Witcher</h1>
+        <p>Where waves meet fantasy</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#surfing">Surfing</a></li>
+            <li><a href="#witcher">The Witcher</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="surfing" class="section">
+            <h2>Surfing</h2>
+            <p>Surfing is more than just a sport - it's a way of life. From the perfect waves of Hawaii to the challenging breaks of Australia, surfing has captured the hearts of millions worldwide. Whether you're a beginner or a pro, the ocean offers endless opportunities for adventure and self-discovery.</p>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Surfer on wave">
+                    <div class="card-content">
+                        <h3>Perfect Waves</h3>
+                        <p>Discover the world's best surf spots and what makes them special.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Surfing technique">
+                    <div class="card-content">
+                        <h3>Surfing Techniques</h3>
+                        <p>Learn about different surfing styles and techniques from the pros.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="witcher" class="section">
+            <h2>The Witcher</h2>
+            <p>Based on the book series by Andrzej Sapkowski, The Witcher follows the story of Geralt of Rivia, a monster hunter who struggles to find his place in a world where people often prove more wicked than beasts. The Netflix series has brought this fantasy world to life with stunning visuals and compelling storytelling.</p>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Geralt of Rivia">
+                    <div class="card-content">
+                        <h3>Characters</h3>
+                        <p>Meet the complex characters that inhabit the world of The Witcher.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Witcher world">
+                    <div class="card-content">
+                        <h3>The World</h3>
+                        <p>Explore the rich lore and mythology of The Witcher universe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Surfing gallery">
+                    <div class="card-content">
+                        <h3>Surfing Moments</h3>
+                        <p>Capturing the beauty and power of the ocean.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Witcher scenes">
+                    <div class="card-content">
+                        <h3>Witcher Scenes</h3>
+                        <p>Iconic moments from the series.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Surf & The Witcher. All rights reserved.</p>
+    </footer>
+</body>
+</html>
